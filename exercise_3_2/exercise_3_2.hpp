@@ -1,4 +1,7 @@
+#pragma once
+
 #include <string>
+#include <vector>
 #include <memory>
 
 class Node {
@@ -8,8 +11,6 @@ public:
 };
 
 class LinkedList {
-private:
-    std::unique_ptr<Node> head;
 public:
 
     LinkedList();
@@ -27,5 +28,6 @@ public:
     void remove_at_index(int index);
 
     void print_names();
-
+private:
+    std::unique_ptr<Node> head;
 };

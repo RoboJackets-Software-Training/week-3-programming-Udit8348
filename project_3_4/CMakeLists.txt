@@ -3,4 +3,4 @@ project(project_3_4 C CXX)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(dungeon dungeon.cpp)
+add_executable(dungeon dungeon.cpp graph_search_solution.hpp)
